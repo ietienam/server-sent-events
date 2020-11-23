@@ -22,7 +22,7 @@ let num = 0
 function sendGeneratedNumber(res) {
   res.write("data: " + `New number is ${num++}\n\n`)
 
-  // call the function every minute
+  // call the function every second
   setTimeout(() => {
     sendGeneratedNumber(res)
   }, 1000);
